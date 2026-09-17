@@ -1,0 +1,94 @@
+/*CSS Reset*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+h1{
+    color: rgb(0, 0, 0);
+    font-size: 2.5rem;
+    text-align: center;
+    margin-bottom: 20px;
+
+}
+
+nav{
+    display: flex;
+    justify-content: center;
+    background-color: rgb(0, 124, 233);
+    padding: 10px;
+}
+nav ul li a{
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    margin: 0 10px;
+    font-size: 1.2rem;
+}
+nav ul{
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    padding: 0;
+}
+nav ul li a:hover{
+    color: rgb(0, 0, 0);
+    background-color: rgb(255, 255, 255);
+    display:block; ;
+    padding: 5px 10px;
+}
+h2{
+    color: rgb(0, 0, 0);
+    font-size: 2rem;
+    text-align: center;
+    margin-bottom: 20px;
+}
+.responsive-image {
+    max-width: 100%;
+    height: auto;
+}
+.container {
+    display: inline-grid;
+    background-color: aqua;
+    padding: 10px;
+grid-template-columns: auto auto auto;    
+}
+.container div {
+
+    background-color: aqua;
+margin: 10px; 
+padding: 20px ;
+font-family: 'Courier New', Courier, monospace;  
+border-radius: 5px; 
+    
+
+}
+
+@media screen and (max-width: 768px) {
+    body {
+        font-size: 14px;
+    }
+    nav{
+        flex-direction: column;
+        align-items: center;
+        display: block;
+    }
+    container {
+        grid-template-columns: auto auto;
+        width: 100%;
+    }
+    
+}
+@media screen and (max-width: 480px) {
+    body {
+        font-size: 12px;
+    }
+    nav{
+        flex-direction: column;
+        align-items: center;
+        display: block;
+    }
+    .container {
+        grid-template-columns: auto;
+        width: 100%;
+    }
+}
